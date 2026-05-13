@@ -1,0 +1,23 @@
+{
+    "name": "Krishtechinnovate",
+    "short_name": "KrishTech",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#080C18",
+    "theme_color": "#4F8EF7",
+    "description": "Krishtechinnovate — Premium custom software, web & mobile apps, AI integration, and UI/UX design.",
+    "orientation": "portrait-primary",
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "favicon.jpg",
+            "sizes": "192x192",
+            "type": "image/jpeg"
+        },
+        {
+            "src": "favicon.jpg",
+            "sizes": "512x512",
+            "type": "image/jpeg"
+        }
+    ]
+}
