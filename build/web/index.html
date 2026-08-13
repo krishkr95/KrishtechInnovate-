@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary SEO Meta Tags -->
+  <title>Krishtechinnovate | Custom Software & Digital Solutions</title>
+  <meta name="title" content="Krishtechinnovate | Custom Software & Digital Solutions">
+  <meta name="description" content="Krishtechinnovate delivers premium custom web apps, mobile apps, UI/UX design, AI integration, and digital marketing solutions. Trusted by startups and enterprises. Get a free quote today.">
+  <meta name="keywords" content="Krishtechinnovate, custom software development, web app development, mobile app development, UI UX design, AI integration, digital marketing, Flutter development, SaaS platform, India tech company">
+  <meta name="author" content="Krishtechinnovate">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#4F8EF7">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://krishtechinnovate.com/">
+
+  <!-- Open Graph / Facebook / WhatsApp -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://krishtechinnovate.com/">
+  <meta property="og:title" content="Krishtechinnovate | Custom Software & Digital Solutions">
+  <meta property="og:description" content="Premium custom web apps, mobile apps, UI/UX design, AI integration, and digital marketing. Get your project started today with Krishtechinnovate.">
+  <meta property="og:image" content="https://krishtechinnovate.com/icons/Icon-512.png">
+  <meta property="og:image:width" content="512">
+  <meta property="og:image:height" content="512">
+  <meta property="og:locale" content="en_IN">
+  <meta property="og:site_name" content="Krishtechinnovate">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://krishtechinnovate.com/">
+  <meta name="twitter:title" content="Krishtechinnovate | Custom Software & Digital Solutions">
+  <meta name="twitter:description" content="Premium custom software, web & mobile apps, AI integration, and UI/UX design. Build your vision with Krishtechinnovate.">
+  <meta name="twitter:image" content="https://krishtechinnovate.com/icons/Icon-512.png">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Krishtechinnovate">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="favicon.jpg"/>
+  <link rel="apple-touch-icon" href="favicon.jpg">
+  <link rel="shortcut icon" href="favicon.jpg">
+
+  <!-- PWA Manifest -->
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Razorpay Payment Gateway -->
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  <script>
+    function triggerRazorpayCheckout(key, amount, currency, name, desc, contact, email) {
+      return new Promise((resolve, reject) => {
+        var options = {
+          "key": key,
+          "amount": amount.toString(),
+          "currency": currency || "INR",
+          "name": name,
+          "description": desc,
+          "prefill": {
+            "name": name,
+            "email": email,
+            "contact": contact
+          },
+          "theme": {
+            "color": "#0052D4"
+          },
+          "handler": function (response) {
+            resolve(response.razorpay_payment_id);
+          },
+          "modal": {
+            "ondismiss": function() {
+              reject("Payment modal closed");
+            }
+          }
+        };
+        var rzp = new Razorpay(options);
+        rzp.on('payment.failed', function (response) {
+          reject(response.error.description);
+        });
+        rzp.open();
+      });
+    }
+  </script>
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Krishtechinnovate",
+    "url": "https://krishtechinnovate.com",
+    "logo": "https://krishtechinnovate.com/icons/Icon-512.png",
+    "description": "Krishtechinnovate delivers premium custom web apps, mobile apps, UI/UX design, AI integration, and digital marketing solutions.",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "customer support",
+      "email": "support@krishtechinnovate.com"
+    },
+    "sameAs": [],
+    "foundingDate": "2024",
+    "areaServed": "Worldwide",
+    "serviceType": ["Custom Software Development", "Web Application Development", "Mobile App Development", "UI/UX Design", "AI Integration", "Digital Marketing"]
+  }
+  </script>
+
+  <!-- FAQ Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What services does Krishtechinnovate offer?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Krishtechinnovate offers custom web & mobile app development, UI/UX design, AI & ML integration, cloud architecture, e-commerce solutions, and ongoing technical support and maintenance."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does it take to build a custom application?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most projects are delivered within 2-8 weeks depending on complexity. We provide a detailed timeline estimate after your initial free consultation, with regular updates throughout the build."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I change or upgrade my service plan at any time?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, you can upgrade, downgrade, or cancel your subscription at any time from your billing dashboard with no hidden fees or long-term contracts."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you offer a satisfaction guarantee?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We strive for excellence. If you are not satisfied with our deliverable, we offer unlimited revisions within the project scope and a 7-day satisfaction guarantee for new clients."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>
